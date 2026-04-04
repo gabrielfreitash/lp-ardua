@@ -10,6 +10,14 @@ import Contact from "./components/sections/Contact";
 import GrainOverlay from "./components/ui/GrainOverlay";
 import ParticleCanvas from "./components/ui/ParticleCanvas";
 
+function SectionDivider() {
+  return (
+    <div className="max-w-6xl mx-auto px-8 md:px-16 lg:px-24">
+      <div className="h-px bg-gradient-to-r from-transparent via-ardua-gray/50 to-transparent" />
+    </div>
+  );
+}
+
 export default function App() {
   return (
     <>
@@ -18,11 +26,17 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
+        <SectionDivider />
         <About />
+        <SectionDivider />
         <Services />
+        <SectionDivider />
         <Portfolio />
+        <SectionDivider />
         <VideoShowcase />
+        <SectionDivider />
         <Clients />
+        <SectionDivider />
         <Contact />
       </main>
       <Footer />

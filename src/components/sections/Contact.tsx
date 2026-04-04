@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <section
       id="contato"
-      className="relative py-32 md:py-48 px-6 md:px-12"
+      className="relative py-40 md:py-56 lg:py-64 px-8 md:px-16 lg:px-24"
     >
       {/* Background glow */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
@@ -18,7 +18,7 @@ export default function Contact() {
         <TextReveal
           text={content.contact.heading}
           as="h2"
-          className="text-ardua-pure text-4xl md:text-6xl lg:text-7xl font-bold mb-6"
+          className="text-ardua-pure text-4xl md:text-6xl lg:text-7xl font-bold mb-8"
         />
 
         <motion.p

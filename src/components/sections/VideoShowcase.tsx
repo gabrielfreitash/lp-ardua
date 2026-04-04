@@ -7,14 +7,14 @@ export default function VideoShowcase() {
   const { featured, videos } = content.videoShowcase;
 
   return (
-    <section id="videos" className="relative py-32 md:py-48 px-6 md:px-12">
+    <section id="videos" className="relative py-40 md:py-56 lg:py-64 px-8 md:px-16 lg:px-24">
       {/* Background glow behind featured video */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[500px] rounded-full bg-white/[0.015] blur-[150px] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Header */}
         <motion.span
-          className="text-ardua-muted text-xs uppercase tracking-[0.3em] block mb-4"
+          className="text-ardua-muted text-xs uppercase tracking-[0.3em] block mb-6"
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -25,11 +25,11 @@ export default function VideoShowcase() {
         <TextReveal
           text={content.videoShowcase.heading}
           as="h2"
-          className="text-ardua-pure text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
+          className="text-ardua-pure text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
         />
 
         <motion.p
-          className="text-ardua-muted text-lg md:text-xl max-w-xl mb-16"
+          className="text-ardua-muted text-lg md:text-xl max-w-xl mb-16 md:mb-24"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

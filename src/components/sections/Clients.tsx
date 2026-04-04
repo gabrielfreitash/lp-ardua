@@ -9,11 +9,11 @@ export default function Clients() {
   return (
     <section
       id="clientes"
-      className="relative py-32 md:py-48 overflow-hidden"
+      className="relative py-40 md:py-56 lg:py-64 overflow-hidden"
     >
-      <div className="px-6 md:px-12 max-w-6xl mx-auto mb-20">
+      <div className="px-8 md:px-16 lg:px-24 max-w-6xl mx-auto mb-20">
         <motion.span
-          className="text-ardua-muted text-xs uppercase tracking-[0.3em] block mb-4"
+          className="text-ardua-muted text-xs uppercase tracking-[0.3em] block mb-6"
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -49,7 +49,7 @@ export default function Clients() {
       </div>
 
       {/* Testimonial */}
-      <div className="px-6 md:px-12 max-w-4xl mx-auto">
+      <div className="px-8 md:px-16 lg:px-24 max-w-4xl mx-auto">
         <motion.blockquote
           className="relative"
           initial={{ opacity: 0, y: 40 }}

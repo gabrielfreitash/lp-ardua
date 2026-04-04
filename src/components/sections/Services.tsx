@@ -6,12 +6,12 @@ export default function Services() {
   return (
     <section
       id="servicos"
-      className="relative py-32 md:py-48 px-6 md:px-12"
+      className="relative py-40 md:py-56 lg:py-64 px-8 md:px-16 lg:px-24"
     >
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <motion.span
-          className="text-ardua-muted text-xs uppercase tracking-[0.3em] block mb-4"
+          className="text-ardua-muted text-xs uppercase tracking-[0.3em] block mb-6"
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -23,11 +23,11 @@ export default function Services() {
         <TextReveal
           text={content.services.heading}
           as="h2"
-          className="text-ardua-pure text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
+          className="text-ardua-pure text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
         />
 
         <motion.p
-          className="text-ardua-muted text-lg md:text-xl max-w-xl mb-20"
+          className="text-ardua-muted text-lg md:text-xl max-w-xl mb-16 md:mb-24"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
