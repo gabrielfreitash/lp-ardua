@@ -6,7 +6,7 @@ export default function Services() {
   return (
     <section
       id="servicos"
-      className="relative py-16 md:py-32 lg:py-40 px-6 md:px-16 lg:px-24"
+      className="relative px-6 md:px-16 lg:px-24"
     >
       <div className="max-w-6xl mx-auto">
         {/* Header */}

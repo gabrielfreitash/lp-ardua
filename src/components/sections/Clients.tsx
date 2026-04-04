@@ -9,7 +9,7 @@ export default function Clients() {
   return (
     <section
       id="clientes"
-      className="relative py-16 md:py-32 lg:py-40 overflow-hidden"
+      className="relative overflow-hidden"
     >
       <div className="px-6 md:px-16 lg:px-24 max-w-6xl mx-auto mb-20">
         <motion.span

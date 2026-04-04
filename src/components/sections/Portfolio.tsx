@@ -45,7 +45,7 @@ export default function Portfolio() {
     <section
       ref={sectionRef}
       id="portfolio"
-      className={`relative ${isMobile ? "py-16 md:py-32 lg:py-40 px-6 md:px-16 lg:px-24" : "h-screen overflow-hidden"}`}
+      className={`relative ${isMobile ? "px-6 md:px-16 lg:px-24" : "h-screen overflow-hidden"}`}
     >
       {/* Header - positioned differently for desktop/mobile */}
       <div
