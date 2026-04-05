@@ -39,7 +39,7 @@ export default function About() {
   return (
     <section
       id="sobre"
-      className="relative px-6 md:px-16 lg:px-24"
+      className="relative"
     >
       <div className="max-w-6xl mx-auto">
         {/* Section label */}

@@ -45,7 +45,7 @@ export default function Portfolio() {
     <section
       ref={sectionRef}
       id="portfolio"
-      className={`relative ${isMobile ? "px-6 md:px-16 lg:px-24" : "h-screen overflow-hidden"}`}
+      className={`relative ${isMobile ? "" : "h-screen overflow-hidden -mx-6 md:-mx-12 lg:-mx-20"}`}
     >
       {/* Header - positioned differently for desktop/mobile */}
       <div

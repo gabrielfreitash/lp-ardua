@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <section
       id="contato"
-      className="relative px-6 md:px-16 lg:px-24"
+      className="relative"
     >
       {/* Background glow */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">

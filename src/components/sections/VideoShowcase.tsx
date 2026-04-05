@@ -7,7 +7,7 @@ export default function VideoShowcase() {
   const { featured, videos } = content.videoShowcase;
 
   return (
-    <section id="videos" className="relative px-6 md:px-16 lg:px-24">
+    <section id="videos" className="relative">
       {/* Background glow behind featured video */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[500px] rounded-full bg-white/[0.015] blur-[150px] pointer-events-none" />
 

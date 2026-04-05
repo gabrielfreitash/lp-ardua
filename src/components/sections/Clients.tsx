@@ -11,7 +11,7 @@ export default function Clients() {
       id="clientes"
       className="relative overflow-hidden"
     >
-      <div className="px-6 md:px-16 lg:px-24 max-w-6xl mx-auto mb-20">
+      <div className="max-w-6xl mx-auto mb-20">
         <motion.span
           className="text-ardua-muted text-xs uppercase tracking-[0.3em] block mb-6"
           initial={{ opacity: 0, x: -20 }}
@@ -29,7 +29,7 @@ export default function Clients() {
       </div>
 
       {/* Infinite marquee */}
-      <div className="relative mb-24">
+      <div className="relative mb-24 -mx-6 md:-mx-12 lg:-mx-20">
         {/* Fade edges */}
         <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-ardua-black to-transparent z-10" />
         <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-ardua-black to-transparent z-10" />
@@ -49,7 +49,7 @@ export default function Clients() {
       </div>
 
       {/* Testimonial */}
-      <div className="px-6 md:px-16 lg:px-24 max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <motion.blockquote
           className="relative"
           initial={{ opacity: 0, y: 40 }}

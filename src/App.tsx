@@ -12,7 +12,7 @@ import ParticleCanvas from "./components/ui/ParticleCanvas";
 
 function SectionDivider() {
   return (
-    <div className="max-w-6xl mx-auto px-6 md:px-16 lg:px-24">
+    <div className="max-w-6xl mx-auto w-full">
       <div className="h-px bg-gradient-to-r from-transparent via-ardua-gray to-transparent" />
     </div>
   );
@@ -24,7 +24,7 @@ export default function App() {
       <ParticleCanvas />
       <GrainOverlay />
       <Navbar />
-      <main className="flex flex-col gap-24 md:gap-40 lg:gap-52">
+      <main className="flex flex-col gap-24 md:gap-40 lg:gap-52 px-6 md:px-12 lg:px-20">
         <Hero />
         <SectionDivider />
         <About />
