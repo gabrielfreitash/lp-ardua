@@ -1,181 +1,157 @@
-export const content = {
-  nav: {
-    links: [
-      { label: "Sobre", href: "#sobre" },
-      { label: "Serviços", href: "#servicos" },
-      { label: "Portfólio", href: "#portfolio" },
-      { label: "Vídeos", href: "#videos" },
-      { label: "Clientes", href: "#clientes" },
-      { label: "Contato", href: "#contato" },
-    ],
+export const siteContent = {
+  brand: {
+    name: "Árdua",
+    tagline: "Produtora de vídeo",
+    description:
+      "Criação de conteúdo para as redes sociais de marcas e empresas de todos os segmentos.",
   },
-
+  nav: [
+    { label: "Trabalhos", href: "#portfolio" },
+    { label: "Sobre", href: "#sobre" },
+    { label: "Serviços", href: "#servicos" },
+    { label: "Processo", href: "#processo" },
+    { label: "Contato", href: "#contato" },
+  ],
   hero: {
-    title: "ÁRDUA",
-    tagline: "Transformamos marcas em histórias que conectam.",
-    subtitle: "Produtora de vídeo focada em conteúdo para redes sociais.",
+    eyeline: "Produtora de vídeo · São Paulo · Brasil",
+    headline: ["Histórias", "que merecem", "ser vistas."],
+    sub: "Criamos conteúdo em vídeo para as redes sociais de marcas que não se contentam com o óbvio.",
+    cta: "Começar um projeto",
+    scroll: "Role para ver",
   },
-
+  marquee: [
+    "Direção",
+    "Roteiro",
+    "Captação",
+    "Edição",
+    "Motion",
+    "Color",
+    "Sound Design",
+    "Estratégia de Conteúdo",
+  ],
   about: {
-    heading: "Sobre nós",
-    text: "A Árdua é uma produtora de vídeo, focada em criação de conteúdo para as redes sociais de marcas e empresas de todos os segmentos. Acreditamos que cada marca tem uma história única — e nosso trabalho é transformá-la em conteúdo que gera impacto real.",
+    kicker: "[ 01 — Sobre ]",
+    title: "Conteúdo feito com intenção.",
+    body: [
+      "A Árdua nasceu da convicção de que marca nenhuma se constrói com vídeo genérico. Trabalhamos lado a lado com empresas de todos os segmentos para traduzir identidade em imagem em movimento.",
+      "Não entregamos pacotes. Entregamos presença. Cada corte, cada quadro, cada segundo é pensado para o tempo curto — e brutal — das redes sociais.",
+    ],
     stats: [
-      { value: "100+", label: "Projetos entregues" },
-      { value: "50+", label: "Marcas atendidas" },
-      { value: "1M+", label: "Visualizações geradas" },
+      { value: "120+", label: "Projetos entregues" },
+      { value: "40M", label: "Views orgânicos" },
+      { value: "08", label: "Anos de estrada" },
+      { value: "24/7", label: "No corte" },
     ],
   },
-
-  services: {
-    heading: "Nossos Serviços",
-    subtitle: "Do conceito à entrega final, cuidamos de cada detalhe.",
-    items: [
-      {
-        title: "Produção de Vídeo",
-        description:
-          "Captação profissional com equipamentos de última geração para conteúdos que se destacam no feed.",
-        icon: "🎬",
-      },
-      {
-        title: "Conteúdo para Redes Sociais",
-        description:
-          "Criação de vídeos otimizados para Instagram, TikTok, YouTube e todas as plataformas digitais.",
-        icon: "📱",
-      },
-      {
-        title: "Brand Storytelling",
-        description:
-          "Narrativas audiovisuais que traduzem a essência da sua marca e criam conexão genuína com seu público.",
-        icon: "✨",
-      },
-      {
-        title: "Motion Design",
-        description:
-          "Animações e motion graphics que dão vida às suas ideias com dinamismo e criatividade.",
-        icon: "🎨",
-      },
-      {
-        title: "Captação e Edição",
-        description:
-          "Filmagem e pós-produção completa, da cor ao som, garantindo qualidade cinematográfica.",
-        icon: "🎥",
-      },
-      {
-        title: "Estratégia de Conteúdo",
-        description:
-          "Planejamento editorial alinhado aos objetivos da sua marca para resultados consistentes.",
-        icon: "📊",
-      },
-    ],
-  },
-
+  // Fill in real project data. `youtubeId` is the ID from the YouTube URL
+  // (the part after `v=`). For https://www.youtube.com/watch?v=pJxeyK7it0o
+  // the id is "pJxeyK7it0o".
   portfolio: {
-    heading: "Portfólio",
-    subtitle: "Alguns dos nossos trabalhos recentes.",
+    kicker: "[ 02 — Portfólio ]",
+    title: "Trabalhos recentes",
+    note: "Selecionados 2023 — 2026",
     items: [
       {
-        title: "Campanha Verão 2025",
-        category: "Moda",
-        color: "from-amber-900/40 to-orange-900/40",
+        id: "01",
+        client: "Clima Fiat",
+        type: "Campanha Social",
+        year: "2026",
+        duration: "00:45",
+        youtubeId: "pJxeyK7it0o",
       },
       {
-        title: "Lançamento de Produto",
-        category: "Tecnologia",
-        color: "from-blue-900/40 to-cyan-900/40",
+        id: "02",
+        client: "Linha Oeste",
+        type: "Documental",
+        year: "2025",
+        duration: "02:10",
+        youtubeId: "pJxeyK7it0o",
       },
       {
-        title: "Série Institucional",
-        category: "Corporativo",
-        color: "from-emerald-900/40 to-green-900/40",
+        id: "03",
+        client: "Marca Volátil",
+        type: "Série Reels",
+        year: "2025",
+        duration: "00:15",
+        youtubeId: "pJxeyK7it0o",
       },
       {
-        title: "Conteúdo Diário",
-        category: "Gastronomia",
-        color: "from-red-900/40 to-rose-900/40",
+        id: "04",
+        client: "Estúdio Norte",
+        type: "Institucional",
+        year: "2024",
+        duration: "01:30",
+        youtubeId: "pJxeyK7it0o",
       },
       {
-        title: "Documentário de Marca",
-        category: "Lifestyle",
-        color: "from-purple-900/40 to-violet-900/40",
+        id: "05",
+        client: "Caju Beats",
+        type: "Videoclipe",
+        year: "2024",
+        duration: "03:22",
+        youtubeId: "pJxeyK7it0o",
       },
       {
-        title: "Campanha Digital",
-        category: "E-commerce",
-        color: "from-pink-900/40 to-fuchsia-900/40",
+        id: "06",
+        client: "Matilde Café",
+        type: "Branded Content",
+        year: "2023",
+        duration: "00:60",
+        youtubeId: "pJxeyK7it0o",
       },
     ],
   },
-
-  videoShowcase: {
-    heading: "Nossos Vídeos",
-    subtitle: "Assista alguns dos nossos melhores trabalhos.",
-    featured: {
-      youtubeId: "dQw4w9WgXcQ",
-      title: "Campanha Institucional — Marca XYZ",
-      description:
-        "Um mergulho na essência da marca, traduzido em imagens que conectam e inspiram.",
-    },
-    videos: [
+  services: {
+    kicker: "[ 03 — Serviços ]",
+    title: "O que fazemos",
+    items: [
       {
-        youtubeId: "dQw4w9WgXcQ",
-        title: "Reels — Coleção Verão",
-        category: "Moda",
+        n: "01",
+        name: "Direção & Roteiro",
+        desc: "Da primeira ideia ao roteiro final. Construímos a narrativa antes de acender qualquer luz.",
       },
       {
-        youtubeId: "dQw4w9WgXcQ",
-        title: "Lançamento de Produto",
-        category: "Tecnologia",
+        n: "02",
+        name: "Produção Audiovisual",
+        desc: "Captação com equipe enxuta, equipamento cinematográfico e olhar autoral.",
       },
       {
-        youtubeId: "dQw4w9WgXcQ",
-        title: "Série de Conteúdo",
-        category: "Gastronomia",
+        n: "03",
+        name: "Pós-produção",
+        desc: "Edição, color grading, motion graphics e sound design. Acabamento de cinema, ritmo de rede.",
       },
       {
-        youtubeId: "dQw4w9WgXcQ",
-        title: "Documentário de Marca",
-        category: "Lifestyle",
+        n: "04",
+        name: "Estratégia de Conteúdo",
+        desc: "Planejamento editorial pensado para cada plataforma — Reels, TikTok, YouTube, institucional.",
       },
     ],
   },
-
-  clients: {
-    heading: "Quem confia na Árdua",
-    logos: [
-      "MARCA A",
-      "MARCA B",
-      "MARCA C",
-      "MARCA D",
-      "MARCA E",
-      "MARCA F",
-      "MARCA G",
-      "MARCA H",
+  process: {
+    kicker: "[ 04 — Processo ]",
+    title: "Como trabalhamos",
+    steps: [
+      { n: "I", name: "Imersão", desc: "Escutamos a marca antes de propor qualquer coisa." },
+      { n: "II", name: "Concepção", desc: "Roteiro, referências visuais, cronograma." },
+      { n: "III", name: "Captação", desc: "Direção em set, som limpo, imagem com intenção." },
+      { n: "IV", name: "Finalização", desc: "Corte, cor, som. Entrega nos formatos certos." },
     ],
-    testimonial: {
-      quote:
-        "A Árdua transformou completamente a presença digital da nossa marca. O conteúdo que produzem não só é visualmente impecável, como gera resultados reais de engajamento.",
-      author: "Maria Silva",
-      role: "Diretora de Marketing",
-      company: "Empresa XYZ",
-    },
   },
-
   contact: {
-    heading: "Vamos criar algo incrível?",
-    subtitle:
-      "Estamos prontos para transformar a presença digital da sua marca.",
-    cta: "Fale Conosco",
-    email: "contato@ardua.com.br",
-    whatsapp: "+55 11 99999-9999",
+    kicker: "[ 05 — Contato ]",
+    title: ["Vamos", "fazer", "juntos?"],
+    email: "contato@ardua.tv",
+    phone: "+55 11 9 9999-9999",
+    address: ["Rua Augusta, 1404", "São Paulo — SP, Brasil"],
+    cta: "Enviar briefing",
   },
-
   footer: {
-    copyright: "ÁRDUA Produtora de Vídeo",
-    tagline: "Conteúdo que conecta.",
-    social: [
+    socials: [
       { label: "Instagram", href: "#" },
+      { label: "Vimeo", href: "#" },
       { label: "YouTube", href: "#" },
-      { label: "LinkedIn", href: "#" },
+      { label: "Behance", href: "#" },
     ],
+    copyright: "© 2026 Árdua Produtora. Todos os direitos reservados.",
   },
 };

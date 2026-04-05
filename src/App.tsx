@@ -1,45 +1,36 @@
-import Navbar from "./components/layout/Navbar";
-import Footer from "./components/layout/Footer";
-import Hero from "./components/sections/Hero";
-import About from "./components/sections/About";
-import Services from "./components/sections/Services";
-import Portfolio from "./components/sections/Portfolio";
-import VideoShowcase from "./components/sections/VideoShowcase";
-import Clients from "./components/sections/Clients";
-import Contact from "./components/sections/Contact";
-import GrainOverlay from "./components/ui/GrainOverlay";
-import ParticleCanvas from "./components/ui/ParticleCanvas";
+import { useSmoothScroll } from "./hooks/useSmoothScroll";
+import { Loader } from "./components/Loader";
+import { CustomCursor } from "./components/CustomCursor";
+import { Nav } from "./components/Nav";
+import { Hero } from "./components/Hero";
+import { Marquee } from "./components/Marquee";
+import { About } from "./components/About";
+import { Portfolio } from "./components/Portfolio";
+import { Services } from "./components/Services";
+import { Process } from "./components/Process";
+import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
 
-function SectionDivider() {
+function App() {
+  useSmoothScroll();
+
   return (
-    <div className="max-w-6xl mx-auto w-full">
-      <div className="h-px bg-gradient-to-r from-transparent via-ardua-gray to-transparent" />
+    <div className="relative grain bg-ink min-h-screen">
+      <Loader />
+      <CustomCursor />
+      <Nav />
+      <main>
+        <Hero />
+        <Marquee />
+        <About />
+        <Portfolio />
+        <Services />
+        <Process />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
 }
 
-export default function App() {
-  return (
-    <>
-      <ParticleCanvas />
-      <GrainOverlay />
-      <Navbar />
-      <main className="flex flex-col gap-24 md:gap-40 lg:gap-52 px-6 md:px-12 lg:px-20">
-        <Hero />
-        <SectionDivider />
-        <About />
-        <SectionDivider />
-        <Services />
-        <SectionDivider />
-        <Portfolio />
-        <SectionDivider />
-        <VideoShowcase />
-        <SectionDivider />
-        <Clients />
-        <SectionDivider />
-        <Contact />
-      </main>
-      <Footer />
-    </>
-  );
-}
+export default App;
